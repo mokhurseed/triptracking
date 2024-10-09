@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.geo_tracking.MarkAttendanceMapActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/containerMapView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cardLocation"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerLocationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_margin="@dimen/_16sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivLocationMarker"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_location_marker"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLocationTitle"
+                style="@style/plus_jakarta_display_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/mine_craft"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivLocationMarker"
+                app:layout_constraintTop_toTopOf="@id/ivLocationMarker" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvLocationContent"
+                style="@style/plus_jakarta_display_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/dove_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tvLocationTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvLocationTitle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirmLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvLocationContent"
+                style="@style/MaterialButtonBaseStyle"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/confirm_location"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerOngoingTripDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_16sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgScooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/img_scooter"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEndTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MaterialButtonBaseStyle"
+                app:layout_constraintTop_toBottomOf="@id/imgScooter"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/stop_trip"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/capturedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnConfirm"
+
+            />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/MaterialButtonBaseStyle"
+                android:layout_marginVertical="@dimen/_24sdp"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                app:layout_constraintWidth_percent="0.45"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnRetake"
+                app:layout_constraintTop_toBottomOf="@id/capturedImageView"
+                android:text="@string/confirm"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRetake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/MaterialButtonBaseStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.45"
+                android:backgroundTint="@color/label_color"
+                app:strokeColor="@color/scorpion"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@id/btnConfirm"
+                app:layout_constraintTop_toTopOf="@id/btnConfirm"
+                app:layout_constraintStart_toEndOf="@id/btnConfirm"
+                android:text="@string/discard"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

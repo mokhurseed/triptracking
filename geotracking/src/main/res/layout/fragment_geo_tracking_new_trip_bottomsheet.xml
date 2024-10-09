@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_white_top_radius"
+    android:backgroundTint="@color/label_color">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/ic_close_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/layoutTripName"
+        layout="@layout/edit_text_with_label"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/ivClose" />
+
+
+    <include
+        android:id="@+id/layoutButtons"
+        layout="@layout/layout_common_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvVehicleType"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTravelingByLabel"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:text="@string/travelling_by"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:textColor="@color/tundora"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/plus_jakarta_display_medium_small"
+        app:layout_constraintTop_toBottomOf="@id/layoutTripName"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvTravelingByLabel"
+        tools:listitem="@layout/item_vehicle_type"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_16sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="0dp"
+    app:cardElevation="@dimen/_4sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTripNumber"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mine_craft"
+            app:layout_constraintEnd_toStartOf="@id/tvTripDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Trip 12342" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTripDate"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintWidth_percent="0.40"
+            android:textAlignment="center"
+            android:textColor="@color/pale_sky"
+            app:layout_constraintBottom_toBottomOf="@id/tvTripNumber"
+            app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+            app:layout_constraintStart_toEndOf="@id/tvTripNumber"
+            app:layout_constraintTop_toTopOf="@id/tvTripNumber"
+            tools:text="11/11/2011 123456776543" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/_20ssp"
+            android:layout_height="@dimen/_20ssp"
+            android:src="@drawable/ic_delete"
+            android:scaleType="center"
+            android:layout_marginStart="@dimen/_2ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTripDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTripDate"
+            app:layout_constraintTop_toTopOf="@id/tvTripDate"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/alto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTripNumber" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFromLocationLabel"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/from_location"
+            android:textColor="@color/pale_sky"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvToLocationLabel"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/to_location"
+            android:textColor="@color/pale_sky"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFromLocation"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/mine_craft"
+            app:layout_constraintEnd_toStartOf="@id/ivDashedArrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFromLocationLabel"
+            tools:text="Mumbai" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvToLocation"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="2"
+            android:textColor="@color/mine_craft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/ivDashedArrow"
+            app:layout_constraintTop_toBottomOf="@+id/tvToLocationLabel"
+            tools:text="Delhi" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDistance"
+            style="@style/plus_jakarta_display_medium_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/tvToLocationLabel"
+            app:layout_constraintEnd_toStartOf="@id/tvToLocation"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/tvFromLocation"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="12 km" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivDashedArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_distance_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDistance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

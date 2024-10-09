@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <style name="MaterialButtonBaseStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/plus_jakarta_display_medium
+        </item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="plus_jakarta_display_medium_large">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_medium</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_medium_small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_medium</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_medium_xx_small">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_medium</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_regular_small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_regular</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+
+    <style name="roundCornerView20" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="plus_jakarta_display_medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_medium</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_regular">
+        <item name="android:textSize">@dimen/size16</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_regular</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_light_small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_light</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="plus_jakarta_display_medium_x_large">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_display_medium</item>
+        <item name="android:textColor">@color/tundora</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <!--        <item name="android:background">#33000000</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="rounded_corner_10">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_10sdp</item> <!-- Adjust corner size as needed -->
+    </style>
+
+</resources>

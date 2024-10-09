@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="hi">Hi,</string>
+    <string name="save">Save</string>
+    <string name="search_here">Search here..</string>
+    <string name="no_data_found">No Data Found</string>
+
+    <string name="app_name">geotracking</string>
+    <string name="Success">Success</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+
+
+    <string name="start_new_trip">Start a new trip</string>
+    <string name="on_going">On going</string>
+    <string name="location_is_turned_off_tracking_paused">Location is turned off.. Tracking paused</string>
+    <string name="please_enable_location_to_continue">Please enable location to continue.</string>
+    <string name="tracking_paused">Tracking Paused</string>
+    <string name="end_geo_tracking">End Geo-tracking</string>
+    <string name="turn_on_location">Turn on Location</string>
+    <string name="geo_tracking_ended">Geo Tracking Ended</string>
+    <string name="location_is_back_on_tracking_resumed">Location is back on.. Tracking resumed</string>
+    <string name="confirm_location">Confirm location</string>
+    <string name="stop_trip">Stop trip</string>
+    <string name="from_location">From location</string>
+    <string name="to_location">To location</string>
+    <string name="travelling_by">Travelling by</string>
+    <string name="two_wheeler">Two wheeler</string>
+    <string name="four_wheeler">Four wheeler</string>
+    <string name="please_enter_trip_name">Please enter a trip name</string>
+    <string name="enter_trip_here">Enter trip here</string>
+    <string name="trip_name">Enter name</string>
+    <string name="start">Start</string>
+    <string name="Geo_tracking">Geo tracking</string>
+    <string name="on_going_trip">on going trip</string>
+    <string name="trip_completed">Trip completed</string>
+    <string name="allow_display_overlays_permission_to_continue">Allow display overlays permission to continue</string>
+    <string name="trip_tracking">Trip Tracking</string>
+    <string name="correction">Correction</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="discard">Discard</string>
+
+    <string name="allow_permission">Allow Permission</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="deny">Deny</string>
+
+    <string name="please_turn_on_location">Please turn on location</string>
+
+    <string name="geo_tracking">GeoTracking</string>
+    <string name="apply">Apply</string>
+    <string name="confirm_logout">Confirm Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+    <string name="yes_logout">Yes, Logout</string>
+
+    <string name="delete_trip">Delete trip</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="your_trip_is_ongoing_are_you_sure_want_to_delete">Your trip is ongoing,are you sure want to delete</string>
+
+
+</resources>

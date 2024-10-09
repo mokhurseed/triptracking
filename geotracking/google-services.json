@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "321402875418",
+    "project_id": "airtelone-726f1",
+    "storage_bucket": "airtelone-726f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321402875418:android:9c1ddba9b36659c45eaba3",
+        "android_client_info": {
+          "package_name": "com.innov.geotracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321402875418-ai86t8l92q1ejjqlmk1nn5kcif19l8ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4oPs2w29C51AfpxD-f_sIzdpconYOjC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321402875418-ai86t8l92q1ejjqlmk1nn5kcif19l8ae.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "321402875418-fbs9t3u0soii2incjfgu7hv7f7kvh64p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.innov.oneapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321402875418:android:3e16da54980628d85eaba3",
+        "android_client_info": {
+          "package_name": "com.innov.one_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321402875418-ldhr3ndm4u0lrdo48rm2hgcdreg48dd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innov.one_app",
+            "certificate_hash": "9b2437400a6702e9265c23b72f680cded941b142"
+          }
+        },
+        {
+          "client_id": "321402875418-ai86t8l92q1ejjqlmk1nn5kcif19l8ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4oPs2w29C51AfpxD-f_sIzdpconYOjC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321402875418-ai86t8l92q1ejjqlmk1nn5kcif19l8ae.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "321402875418-fbs9t3u0soii2incjfgu7hv7f7kvh64p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.innov.oneapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
