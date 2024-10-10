@@ -1,14 +1,12 @@
 plugins {
-    id("com.android.library")
-id("maven-publish")
-//    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     id("realm-android")
 
 }
 
-//group = "com.gitlab.KhurseedAnsari"
+group = "com.github.mokhureed"
 
 android {
     namespace = "com.innov.geotracking"
@@ -51,7 +49,6 @@ android {
     }
 
 
-
 }
 
 
@@ -90,7 +87,7 @@ dependencies {
 }
 
 
-publishing {
+/*publishing {
     repositories {
         maven {
             name = "com.innov.geotracking"
@@ -103,7 +100,7 @@ publishing {
     }
 
 
-/*    publications {
+*//*    publications {
         aar
         aar(MavenPublication) {
             groupId 'com'
@@ -111,8 +108,8 @@ publishing {
             version '1.0.0'
             artifact("set your aar file location")
         }
-    }*/
-}
+    }*//*
+}*/
 
 /*publishing {
     publications {

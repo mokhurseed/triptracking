@@ -1,6 +1,6 @@
 [versions]
-agp = "8.6.1"
-androidMavenGradlePlugin = "2.1"
+androidGradlePlugin = "8.6.1"
+androidMavenGradlePlugin = "1.5"
 geotracking = "1"
 alerter = "7.2.4"
 glide = "4.16.0"
@@ -29,9 +29,12 @@ realm = "10.19.0"
 recyclerview = "1.3.2"
 sdpAndroid = "1.1.1"
 sspAndroid = "1.1.1"
+kezong = "1.3.8"
 
 
 [libraries]
+
+
 android-maven-gradle-plugin = { module = "com.github.dcendents:android-maven-gradle-plugin", version.ref = "androidMavenGradlePlugin" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
@@ -76,10 +79,17 @@ ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid
 
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "agp" }
-
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library  = {id  = "com.android.library" , version.ref = "androidGradlePlugin"}
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+
+
+
+
+
+
+
 
 
 
