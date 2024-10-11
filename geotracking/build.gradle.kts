@@ -93,7 +93,7 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("maven") {
-                groupId = "com.github.mokhurseed.triptracking"
+                groupId = "com.github.mokhurseed"
                 artifactId = "geotracking"
                 version = "1.0.2"
                 from(components["release"])
