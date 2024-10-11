@@ -1,8 +1,11 @@
+import org.jetbrains.kotlin.de.undercouch.gradle.tasks.download.org.apache.commons.logging.LogFactory
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     id("realm-android")
+    id("maven-publish")
 
 }
 
@@ -86,6 +89,19 @@ dependencies {
 
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.mokhurseed.triptracking"
+                artifactId = "geotracking"
+                version = "1.0.2"
+                from(components["release"])
+            }
+
+        }
+    }
+}
 
 /*publishing {
     repositories {
